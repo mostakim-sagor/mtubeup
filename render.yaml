@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: m-tube
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /~
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MTUBE_YOUTUBE_MAX_DURATION
+        value: "1800"
+      - key: MTUBE_YOUTUBE_COOKIE
+        sync: false

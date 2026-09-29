@@ -1,0 +1,37 @@
+{
+  "name": "m-tube",
+  "version": "1.0.0",
+  "private": true,
+  "description": "M-TUBE — Modern Media Downloader. POWER BY : MOSTAKIM LAB'S",
+  "author": "MOSTAKIM LAB'S",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "NODE_ENV=production node index.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@media-downloaders/v2": "^2.1.1",
+    "axios": "^1.12.2",
+    "btch-downloader": "^6.4.0",
+    "clsx": "^2.1.1",
+    "isomorphic-dompurify": "^2.29.0",
+    "lucide-react": "^1.48.0",
+    "nanoid": "^5.1.6",
+    "next": "^15.5.26",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8"
+  },
+  "overrides": {
+    "twitter-downloader": "file:./lib/providers/twitter-downloader"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.5.26"
+  }
+}

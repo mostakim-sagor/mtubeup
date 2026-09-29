@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+package-lock.json
+
+
+# next.js build output
+/.next/
+/out/
+
+# env files (never commit real secrets)
+.env
+.env.local
+.env.*.local
+
+# misc
+.DS_Store
+*.log
+npm-debug.log*
+.replitignore
+.replit
+.conversation
